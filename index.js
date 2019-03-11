@@ -51,4 +51,14 @@ bttn.addEventListener("click", () => {
   console.log("Arrow: ", this);
 });
 
+const btn = document.querySelector("#Btn");
+btn.addEventListener("click", () => {
+  const col = document.querySelector("body").style.backgroundColor;
+  if (col == "green") {
+    document.querySelector("body").style.backgroundColor = "hotpink";
+  } else {
+    document.querySelector("body").style.backgroundColor = "green";
+  }
+});
+
 console.log(this);
